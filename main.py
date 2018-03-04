@@ -4,17 +4,14 @@ import random
 
 print ("Hello ! Welcome to AliBaba Bank! Please enter your name ! ")
 money = 2422
-
-def restarting():
-    while True:
-        nameinput = input("You: ")
-        pattern = "^[a-z-A-Z]+$"
-        nameMatch = re.match(pattern, nameinput)
-    if nameMatch:
-        time.sleep(1)
-        print ("Checking Database for Name... ! ")
-        time.sleep(2)
-        print ("Registered !")
+nameinput = input("You: ")
+pattern = "^[a-z-A-Z]+$"
+nameMatch = re.match(pattern, nameinput)
+if nameMatch:
+    time.sleep(1)
+    print ("Checking Database for Name... ! ")
+    time.sleep(2)
+    print ("Registered !")
 
         #Message
 print ("Good to see you", nameinput, "!")
@@ -166,4 +163,4 @@ elif helpinginput == "5":
                 time.sleep(1)
                 print ("You can safely exit the app !")
             if agreeing5 == "N":
-                print ("See you later ! You can safely ex
+                print ("See you later ! You can safely exit the app!")
